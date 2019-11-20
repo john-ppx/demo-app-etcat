@@ -1,0 +1,18 @@
+# components
+loadusr lcec_conf ethercat-conf.xml
+loadrt lcec 
+loadrt threads period1=10000000
+
+net led1 smart-board.led1 => lcec.0.0.LED1-0
+net led2 smart-board.led2 => lcec.0.0.LED1-1
+net led3 smart-board.led3 => lcec.0.0.LED1-2
+net led4 smart-board.led4 => lcec.0.0.LED1-3
+net led5 smart-board.led5 => lcec.0.0.LED1-4
+net led6 smart-board.led6 => lcec.0.0.LED1-5
+net led7 smart-board.led7 => lcec.0.0.LED1-6
+net led8 smart-board.led8 => lcec.0.0.LED1-7
+
+# realtime thread/function links
+addf lcec.read-all thread1
+addf lcec.write-all thread1
+
