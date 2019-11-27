@@ -11,6 +11,16 @@ net led5 smart-board.led5 => lcec.0.0.LED1-4
 net led6 smart-board.led6 => lcec.0.0.LED1-5
 net led7 smart-board.led7 => lcec.0.0.LED1-6
 net led8 smart-board.led8 => lcec.0.0.LED1-7
+net led9 smart-board.led9 => lcec.0.0.LED2-0
+net led10 smart-board.led10 => lcec.0.0.LED2-1
+net led11 smart-board.led11 => lcec.0.0.LED2-2
+net led12 smart-board.led12 => lcec.0.0.LED2-3
+net led13 smart-board.led13 => lcec.0.0.LED2-4
+net led14 smart-board.led14 => lcec.0.0.LED2-5
+net led15 smart-board.led15 => lcec.0.0.LED2-6
+net led16 smart-board.led16 => lcec.0.0.LED2-7
+net led17 smart-board.led17 => lcec.0.0.LED3-0
+net led18 smart-board.led18 => lcec.0.0.LED3-1
 
 # realtime thread/function links
 addf lcec.read-all thread1
