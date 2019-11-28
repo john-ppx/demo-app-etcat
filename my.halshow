@@ -1,8 +1,11 @@
+# halshow watchlist created Thu Nov 28 11:30:07 CST 2019
+
 sig+led1
 sig+led2
 sig+led3
 sig+led4
 sig+led5
+pin+lcec.0.0.INPUT1-3
 sig+led7
 sig+led8
 sig+led9
