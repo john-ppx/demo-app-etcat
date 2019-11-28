@@ -1,0 +1,45 @@
+<masters>
+    <master idx="0" appTimePeriod="10000000" refClockSyncCycles="5">
+    <slave idx="0" type="generic" vid="00000009" pid="00009252" configPdos="true">
+    <syncManager idx="0" dir="out">
+    </syncManager>
+    <syncManager idx="1" dir="in">
+    </syncManager>
+    <syncManager idx="2" dir="out">
+        <pdo idx="1600">
+            <pdoEntry idx="6200" subIdx="01" bitLen="8" halPin="LED1" halType="bit"/>
+            <pdoEntry idx="6200" subIdx="02" bitLen="8" halPin="LED2" halType="bit"/>
+            <pdoEntry idx="6200" subIdx="03" bitLen="8" halPin="LED3" halType="bit"/>
+            <pdoEntry idx="6200" subIdx="04" bitLen="8" />
+        </pdo>
+    </syncManager>
+    <syncManager idx="3" dir="in">
+        <pdo idx="1A00">
+            <pdoEntry idx="6000" subIdx="01" bitLen="8" halPin="INPUT1" halType="bit"/>
+            <pdoEntry idx="6000" subIdx="02" bitLen="8" halPin="INPUT2" halType="bit"/>
+            <pdoEntry idx="6000" subIdx="03" bitLen="8" halPin="INPUT3" halType="bit"/>
+            <pdoEntry idx="6000" subIdx="04" bitLen="8" halPin="INPUT4" halType="bit"/>
+            <pdoEntry idx="6000" subIdx="05" bitLen="8" halPin="INPUT5" halType="bit"/>
+            <pdoEntry idx="6000" subIdx="06" bitLen="8" />
+        </pdo>
+    </syncManager>
+    <!-- dcConf assignActivate="300" sync0Cycle="*1" sync0Shift="250000"/ -->
+    </slave>
+    <slave idx="1" type="generic" vid="00000009" pid="00009252" configPdos="true">
+    <syncManager idx="0" dir="out">
+    </syncManager>
+    <syncManager idx="1" dir="in">
+    </syncManager>
+    <syncManager idx="2" dir="out">
+        <pdo idx="1600">
+            <pdoEntry idx="6200" subIdx="01" bitLen="8" halPin="LED1" halType="bit"/>
+            <pdoEntry idx="6200" subIdx="02" bitLen="8" />
+        </pdo>
+    </syncManager>
+    <syncManager idx="3" dir="in">
+    </syncManager>
+    <!-- dcConf assignActivate="300" sync0Cycle="*1" sync0Shift="250000"/ -->
+    </slave>
+  </master>
+</masters>
+

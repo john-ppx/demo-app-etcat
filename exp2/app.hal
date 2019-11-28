@@ -1,0 +1,36 @@
+# components
+loadusr lcec_conf ethercat-conf.xml
+loadrt lcec 
+loadrt threads period1=10000000
+
+net led1 smart-board.led1 => lcec.0.0.LED1-0
+net led2 smart-board.led2 => lcec.0.0.LED1-1
+net led3 smart-board.led3 => lcec.0.0.LED1-2
+net led4 smart-board.led4 => lcec.0.0.LED1-3
+net led5 smart-board.led5 => lcec.0.0.LED1-4
+net led6 smart-board.led6 => lcec.0.0.LED1-5
+net led7 smart-board.led7 => lcec.0.0.LED1-6
+net led8 smart-board.led8 => lcec.0.0.LED1-7
+net led9 smart-board.led9 => lcec.0.0.LED2-0
+net led10 smart-board.led10 => lcec.0.0.LED2-1
+net led11 smart-board.led11 => lcec.0.0.LED2-2
+net led12 smart-board.led12 => lcec.0.0.LED2-3
+net led13 smart-board.led13 => lcec.0.0.LED2-4
+net led14 smart-board.led14 => lcec.0.0.LED2-5
+net led15 smart-board.led15 => lcec.0.0.LED2-6
+net led16 smart-board.led16 => lcec.0.0.LED2-7
+net led17 smart-board.led17 => lcec.0.0.LED3-0
+net led18 smart-board.led18 => lcec.0.0.LED3-1
+net led19 smart-board.led19 => lcec.0.1.LED1-0
+net led20 smart-board.led20 => lcec.0.1.LED1-1
+net led21 smart-board.led21 => lcec.0.1.LED1-2
+net led22 smart-board.led22 => lcec.0.1.LED1-3
+net led23 smart-board.led23 => lcec.0.1.LED1-4
+net led24 smart-board.led24 => lcec.0.1.LED1-5
+net led25 smart-board.led25 => lcec.0.1.LED1-6
+net led26 smart-board.led26 => lcec.0.1.LED1-7
+
+# realtime thread/function links
+addf lcec.read-all thread1
+addf lcec.write-all thread1
+

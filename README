@@ -1,0 +1,3 @@
+
+* 基于linuxcnc ethercat 主站的示例代码
+* exp2目录为两个mb006从站级联系统的，示例程序
